@@ -1,9 +1,5 @@
-import random
-import string
-import pyperclip
-
-def generate(int):
-    return ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits + '@&_-*#£$€%+?!') for _ in range(int))
-
-def copy(variable):
-    pyperclip.copy(variable)
+while True:
+    numChar = input("# of characters in password:")
+    numChar = int(numChar)
+    password = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits + '@&_-*#£$€%+?!') for _ in range(numChar))
+    print("Password copied to clipboard")
