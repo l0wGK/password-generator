@@ -48,5 +48,7 @@ def gen():
             
         except:
             print("-->Input was not an integer<--")
-while True:
-    start()
+
+if __name__ == '__main__':
+    while True:
+        start()
