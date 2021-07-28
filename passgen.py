@@ -2,8 +2,8 @@ import random
 import string
 import pyperclip
 
-def generate(int):
-    return ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits + '@&_-*#£$€%+?!{}[]()/~¨.,;<>|#¤§') for _ in range(int))
+def generate(Number: int, Symbols: str):
+    return ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits + Symbols) for _ in range(Number))
 
-def copy(variable):
-    pyperclip.copy(variable)
+def copy(Variable: vars):
+    pyperclip.copy(Variable)
